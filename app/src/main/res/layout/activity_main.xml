@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lotto 6/45 행운의 번호를 알려드립니다."
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="행운의 번호를 만들자!"
+        android:textColor="#FF0000"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:adjustViewBounds="true"
+        android:maxWidth="210dp"
+        android:maxHeight="210dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        android:id="@+id/make_btn"
+        android:width = "200dp"
+        android:height = "2000dp"
+        android:src="@drawable/luck_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/num_1"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:textSize="30dp"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/num_2"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="30dp"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/num_3"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:textSize="30dp"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/num_4"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:textSize="30dp"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/num_5"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#00BCD4"
+            android:textSize="30dp"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/num_6"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:textSize="30dp"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="이번주는 로또 일등이닷~!"
+        android:textColor="#00BCD4"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
